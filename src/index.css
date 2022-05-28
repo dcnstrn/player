@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Nunito", sans-serif;
+}
+
+.player {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playerButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.playerBtn {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: 1px solid rgb(231, 231, 231);
+  background-color: rgb(149, 113, 216);
+  color: rgb(241, 241, 241);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.playerBtn:hover {
+  opacity: 0.8;
+}
+.playerWrapper {
+  background-color: rgb(255, 255, 255);
+
+  border: 1px solid rgb(216, 216, 216);
+  padding: 20px 30px;
+  border-radius: 30px;
+  box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.06);
+}
+
+.playerInputs {
+  display: flex;
+}
+
+.playerInputs span {
+  color: rgb(121, 121, 121);
+  font-size: 16px;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background: #feac5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4bc0c8,
+    #c779d0,
+    #feac5e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4bc0c8,
+    #c779d0,
+    #feac5e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.playerTitle {
+  color: rgb(253, 253, 253);
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.label {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.line1 {
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.line2 {
+  display: block;
+  width: 3px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  left: 50%;
+  top: 50%;
+}
